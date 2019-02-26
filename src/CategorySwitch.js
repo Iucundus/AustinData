@@ -3,7 +3,11 @@ import React, { Component } from 'react';
 class CategorySwitch extends Component {
     render(){
         return(
-            <span className="categorySwitch"><a href="https://www.wikipedia.org">Food</a> | <a href="https://facebook.com">Education</a> | <a href="https://reddit.com">Traffic</a></span>
+            <ul className="nav navbar-nav">
+                <li><a href="https://www.wikipedia.org">Food</a></li>
+                <li><a href="https://facebook.com">Education</a></li>
+                <li><a href="https://facebook.com">Traffic</a></li>
+            </ul>
         )
     }
 }

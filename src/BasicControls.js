@@ -9,11 +9,11 @@ const responseGoogle = (response) => {
 class BasicControls extends Component {
     render() {
         return(
-                <span className="basicControls"><a href="https://www.wikipedia.org">About</a> | <a href="https://facebook.com">Profile </a>
-                     <GoogleLogin onSuccess={responseGoogle} onFailure={responseGoogle} clientId={"280689795193-ubapinqcg16ah7vlskd1oimoisf82bsm.apps.googleusercontent.com"}/>
-                </span>
-
-
+            <ul className="nav navbar-nav navbar-right">
+                <li><a href="https://www.wikipedia.org">About</a></li>
+                <li><a href="https://facebook.com">Profile </a></li>
+                <li><GoogleLogin onSuccess={responseGoogle} onFailure={responseGoogle} clientId={"280689795193-ubapinqcg16ah7vlskd1oimoisf82bsm.apps.googleusercontent.com"}/></li>
+            </ul>
         )
     }
 }
