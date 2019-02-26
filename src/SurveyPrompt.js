@@ -3,9 +3,22 @@ import './SurveyPrompt.css';
 
 class SurveyPrompt extends Component {
 
+    // Todo: high resolution pictures, stylize the text
     render(){
         return(
-            <div className="surveyPrompt"><a href="http://www.wikipedia.org">Click here to take the survey and get started</a></div>
+            <div>
+                <div id="landing-header">
+                    <h1>All About Austin!</h1>
+                    <a href="#" className="btn btn-lg btn-success">Start</a>
+                </div>
+                <ul className="slideshow">
+                    <li />
+                    <li />
+                    <li />
+                    <li />
+                    <li />
+                </ul>
+            </div>
         )
     }
 }
